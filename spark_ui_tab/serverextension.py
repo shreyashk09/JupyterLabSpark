@@ -1,11 +1,4 @@
-"""SparkMonitor Jupyter Web Server Extension
 
-This module adds a custom request handler to Jupyter web server.
-It proxies the Spark Web UI by default running at 127.0.0.1:4040
-to the endpoint notebook_base_url/sparkmonitor
-
-TODO Create unique endpoints for different kernels or spark applications.
-"""
 
 from notebook.base.handlers import IPythonHandler
 import tornado.web
@@ -15,17 +8,13 @@ import os
 import logging
 from bs4 import BeautifulSoup
 
-proxy_root = "/model"
+proxy_root = "/sparkuitab"
 
 
 class SparkMonitorHandler(IPythonHandler):
-    """A custom tornado request handler to proxy Spark Web UI requests."""
 
     async def get(self):
-        """Handles get requests to the Spark UI
-
-        Fetches the Spark Web UI from the configured ports
-        """
+       
 
         http = httpclient.AsyncHTTPClient()
         baseurl = os.environ.get("SPARKMONITOR_UI_HOST", "127.0.0.1")
@@ -82,12 +71,7 @@ class SparkMonitorHandler(IPythonHandler):
 
 
 def load_jupyter_server_extension(nb_server_app):
-    """
-    Called when the Jupyter server extension is loaded.
-
-    Args:
-        nb_server_app (NotebookWebApplication): handle to the Notebook webserver instance.
-    """
+    
     print("SPARKMONITOR_SERVER: Loading Server Extension")
     # Configuring logging for the extension
     # This is necessary because in some versions of jupyter, print statements are not output to console.
@@ -129,14 +113,7 @@ PROXY_ATTRIBUTES = (
 
 
 def replace(content, root_url):
-    """Replace all the links with our prefixed handler links,
 
-     e.g.:
-    /proxy/application_1467283586194_0015/static/styles.css" or
-    /static/styles.css
-    with
-    /spark/static/styles.css
-    """
     soup = BeautifulSoup(content, BEAUTIFULSOUP_BUILDER)
     for tags, attribute in PROXY_ATTRIBUTES:
         for tag in soup.find_all(tags, **{attribute: True}):
@@ -149,11 +126,6 @@ def replace(content, root_url):
 
 
 def url_path_join(*pieces):
-    """Join components of url into a relative url
-
-    Use to prevent double slash when joining subpath. This will leave the
-    initial and final / in place
-    """
     initial = pieces[0].startswith("/")
     final = pieces[-1].endswith("/")
     stripped = [s.strip("/") for s in pieces]
