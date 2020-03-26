@@ -114,7 +114,7 @@ sudo apt-get install awscli
 aws configure set aws_access_key_id &lt;aws_access_key_id&gt;
 aws configure set aws_secret_access_key &lt;aws_secret_access_key&gt;
 aws configure set region &lt;region&gt;
-python3 launch_emr_cloudspakr.py
+[RUN] SPARK_AWS_EMR.ipynb
 </pre>
 
 
