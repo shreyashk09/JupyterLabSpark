@@ -50,20 +50,13 @@
 
 
 ## Development Steps:
-<br />
 
 ### Spark Cluster on standalone:
 
-<br /> 
-
 **pythonic spark library**
-
-<br />
-<pre>pip install pyspark</pre><br />
+<pre>pip install pyspark</pre>
 
 **Spark Cluster**
-
-<br />
 <pre>
 wget https://downloads.apache.org/spark/spark-3.0.0-preview2/
 tar xfvz spark-3.0.0-preview2-bin-hadoop3.2
@@ -71,8 +64,6 @@ cd spark-3.0.0-preview2-bin-hadoop3.2
 </pre>
 
 **Open Terminal or go to system environment and add:**
-
-<br />
 <pre>
 vi .bash_profile
 export SPARK_HOME=~/spark-3.0.0-preview2-bin-hadoop3.2
@@ -85,11 +76,10 @@ source bash_profile
 </pre>
 
 **test**
-<br />
+<pre>
  `echo $SPARK_HOME`
  <br />
- `pyspark`
-
+</pre>
 
 ### Spark Cluster with multiple local systems:
 Configure router for traffic on port 80<br />
@@ -155,7 +145,6 @@ cd JupyterSparkExt
 pip install ~/JupyterSparkExt --pre
 jupyter serverextension enable --py spark_ui_tab --sys-prefix
 </pre>
-<br />
 
 **Rendering Widget:**
 <br />
