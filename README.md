@@ -70,28 +70,30 @@ source bash_profile
 
 **test**
 <pre>
- `echo $SPARK_HOME`
+ echo $SPARK_HOME
 </pre>
 
 ### Spark Cluster with multiple local systems:
 Configure router for traffic on port 80<br />
-`sudo apt-get install openssh-server openssh-client`<br />
-`ssh-keygen -t rsa -P ""`<br />
+<pre>
+sudo apt-get install openssh-server openssh-client
+ssh-keygen -t rsa -P ""
+</pre>
 open .ssh/id_rsa.pub (of master) and copy content to .ssh/authorized_keys into  all the wokers as well as master<br />
 Follow above mentioned steps in all the systems<br />
 ***on Master Node only:***<br />
 <pre>
 sudo vi /etc/hosts
 
-<MASTER-IP> master
-<SLAVE01-IP> worker01
-<SLAVE02-IP> worker02
+&lt;MASTER-IP&nbsp&gt; master
+&lt;SLAVE01-IP&gt; worker01
+&lt;SLAVE02-IP&gt; worker02
 ssh worker01
 ssh worker02
 	
 vi $SPARK_HOME/conf/spark-env.sh
 
-export SPARK_MASTER_HOST="<MASTER-IP>"
+export SPARK_MASTER_HOST="&lt;MASTER-IP>"
 	
 sudo vi $SPARK_HOME/conf/slaves
 
@@ -105,9 +107,9 @@ worker02
 ### Spark Cluster on cloud AWS:
 <pre>
 sudo apt-get install awscli
-aws configure set aws_access_key_id <aws_access_key_id>
-aws configure set aws_secret_access_key <aws_secret_access_key>
-aws configure set region <region>
+aws configure set aws_access_key_id &lt;aws_access_key_id&gt;
+aws configure set aws_secret_access_key &lt;aws_secret_access_key&gt;
+aws configure set region &lt;region&gt;
 python3 launch_emr_cloudspakr.py
 </pre>
 
@@ -116,13 +118,13 @@ python3 launch_emr_cloudspakr.py
 ### Spark Multi-Cluster with multiple application using terminal:
 Open Terminal<br />
 Deploying cluster 1 spark application 1<br />
-`pyspark —master local[0] —name c1_app1`<br />
+<pre>pyspark —master local[0] —name c1_app1</pre>
 Deploying cluster 1 spark application 2<br />
-`pyspark —master local[0] —name c1_app2`<br />
+<pre>pyspark —master local[0] —name c1_app2</pre>
 Deploying cluster 2 spark application 1<br />
-`pyspark —master local[1] —name c2_app1`<br />
+<pre>pyspark —master local[1] —name c2_app1</pre>
 Deploying cluster 2 spark application 2<br />
-`pyspark —master local[1] —name c2_app2`
+<pre>pyspark —master local[1] —name c2_app2</pre>
 
 
 
