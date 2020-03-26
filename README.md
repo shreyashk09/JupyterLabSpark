@@ -19,21 +19,21 @@
 <br />
 <br />
 ## System Components:
-**Dynamic Interactive UI:**
+* **Dynamic Interactive UI:**
 <br />
 &nbsp;&nbsp;Pardon me for the present UI. The UI so far, dynamically manages to handle IFrame window resolution based upon user access.
 <br /><br />
-**Server Extension for programmatic APIs :**
+* **Server Extension for programmatic APIs :**
 <br />
 &nbsp;&nbsp;This enables us to render a  python package that sustains all the programmed scripts and web-scraping using  Request Handlers like tornado. Reduces complexity on JS. 
   <br /><br />
-**IFrames with Proxy Server by WebScrapping**
+* **IFrames with Proxy Server by WebScrapping**
 <br />
 &nbsp;&nbsp;In order to render a webapp directly onto the widget and provide the embedded links of the webapp, WebScrapping enables developers to proxy forward them and customise the webapp. 
 <br /><br />
-**Pyspark for python - spark cluster programmatic Integration**
+* **Pyspark for python - spark cluster programmatic Integration**
 <br /><br />
-**Spark Cluster deployment**
+* **Spark Cluster deployment**
 <br /><br />
 
 ## Showcasing Prerequisites :
@@ -78,7 +78,6 @@ source bash_profile
 **test**
 <pre>
  `echo $SPARK_HOME`
- <br />
 </pre>
 
 ### Spark Cluster with multiple local systems:
@@ -106,7 +105,6 @@ sudo vi $SPARK_HOME/conf/slaves
 master
 worker01
 worker02
-
 </pre>
 
 
