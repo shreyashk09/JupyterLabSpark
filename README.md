@@ -46,24 +46,33 @@
 &nbsp;04:40 &nbsp;Projecting same on Jupiter lab extension<br />
 &nbsp;05:12 &nbsp;Rendering sparkUI for port of choice. <br />
 &nbsp;06:05  &nbsp;With Help of Summary connecting with pyspark context
-
 <br /><br />
 
 
 ## Development Steps:
 <br />
+
 ### Spark Cluster on standalone:
-<br />
+
+<br /> 
+
 **pythonic spark library**
+
 <br />
 <pre>pip install pyspark</pre><br />
-**Spark Cluster**<br />
+
+**Spark Cluster**
+
+<br />
 <pre>
 wget https://downloads.apache.org/spark/spark-3.0.0-preview2/
 tar xfvz spark-3.0.0-preview2-bin-hadoop3.2
 cd spark-3.0.0-preview2-bin-hadoop3.2
 </pre>
-**Open Terminal or go to system environment and add:**<br />
+
+**Open Terminal or go to system environment and add:**
+
+<br />
 <pre>
 vi .bash_profile
 export SPARK_HOME=~/spark-3.0.0-preview2-bin-hadoop3.2
@@ -80,7 +89,7 @@ source bash_profile
  `echo $SPARK_HOME`
  <br />
  `pyspark`
-<br />
+
 
 ### Spark Cluster with multiple local systems:
 Configure router for traffic on port 80<br />
@@ -110,7 +119,7 @@ worker02
 
 </pre>
 
-<br />
+
 
 ### Spark Cluster on cloud AWS:
 <pre>
@@ -121,7 +130,7 @@ aws configure set region <region>
 python3 launch_emr_cloudspakr.py
 </pre>
 
-<br />
+
 
 ### Spark Multi-Cluster with multiple application using terminal:
 Open Terminal<br />
@@ -133,7 +142,6 @@ Deploying cluster 2 spark application 1<br />
 `pyspark —master local[1] —name c2_app1`<br />
 Deploying cluster 2 spark application 2<br />
 `pyspark —master local[1] —name c2_app2`
-<br />
 
 
 
