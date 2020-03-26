@@ -11,27 +11,27 @@
 <br /><br />
 **3. Summarising and presenting Spark Applications’ Context**
 <br />
-&nbsp;&nbsp;The extensions summarises the fetched spark clusters’ and their metadata, which the user could directly copy from, to get connected to their choice of spark application.
+&nbsp;&nbsp;The extensions summarises the fetched spark clusters’ metadata, which user can directly copy, to get connected to the spark application of their choice.
 <br /><br />
 **4. Rendering Applications Spark UI of choice**
 <br />
-	&nbsp;&nbsp;Another main feature is to provide access to the SparksUI for monitoring, of any application on the local system or even of  the remote system, on the extension itself. The extensions Web-Scraps the SparkUI and forward-proxy all the inherited links to the extension’s base URI so that it can be IFramed on the extension itself. 
+	&nbsp;&nbsp;Another main feature is to provide access to monitor any application of the SparksUI on the extension, on a local system or even on a remote system. The extensions Web-Scraps the SparkUI and forward-proxy all the inherited links to the extension’s base URI so that it can be IFramed on the extension itself. 
 <br />
 <br />
 ## System Components:
 * **Dynamic Interactive UI:**
-&nbsp;&nbsp;Pardon me for the present UI. The UI so far, dynamically manages to handle IFrame window resolution based upon user access.<br />
+&nbsp;&nbsp;Pardon me for the present UI =D. The UI dynamically manages to handle IFrame window resolution based upon user access.<br />
 * **Server Extension for programmatic APIs :**
-&nbsp;&nbsp;This enables us to render a  python package that sustains all the programmed scripts and web-scraping using  Request Handlers like tornado. Reduces complexity on JS. <br />
+&nbsp;&nbsp;TThis enables us to render a  python package that sustains all the programmed scripts and scrapes web using  Request Handlers like tornado to reduces complexity on JS. <br />
 * **IFrames with Proxy Server by WebScrapping**
-&nbsp;&nbsp;In order to render a webapp directly onto the widget and provide the embedded links of the webapp, WebScrapping enables developers to proxy forward them and customise the webapp. <br />
+&nbsp;&nbsp;In order to render a webapp directly onto the widget and provide the embedded links of the webapp, WebScrapping enables developers to proxy forward them for customising the webapp. <br />
 * **Pyspark for python - spark cluster programmatic Integration**<br />
 * **Spark Cluster deployment**
 
 
 ## Showcasing Prerequisites :
 **Time Series:**<br />
-&nbsp;00:00 &nbsp;Pyspark to python environment for python spark programmatic apis<br />
+&nbsp;00:00 &nbsp;Pyspark to python environment for python spark programmatic APIs<br />
 &nbsp;00:16 &nbsp;Spark cluster setting up<br />
 &nbsp;00:34 &nbsp;Spark environment setting up in .bash_profile<br />
 &nbsp;00:56 &nbsp;Deploying Multiple Spark Cluster and spark applications <br />
