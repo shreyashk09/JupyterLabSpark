@@ -1,13 +1,13 @@
 # JupyterSparkExt Widget
- 
+ ![alt text](images/sample.png)
 ## Features and Functionalities:
 **1. Auto searching of active Cluster on Local System:**
 <br />
-&nbsp;&nbsp; The jupyterlab widget server extension by default upon activation starts fetching for the active spark clusters and its application on the localhost with ports ranging 4040 :4049. Or manually providing a choice of port
+&nbsp;&nbsp; The jupyterlab widget server extension by default upon activation starts fetching for the active spark clusters and its application on the localhost for ports within range 4040 :4049. Or by manually providing a choice of port
 <br /><br />
 **2. Auto searching of active Cluster on Remote System:**
 <br />
-&nbsp;&nbsp;The jupyterlab widget server extension provides a slot to insert master node DNS which starts fetching for the active spark clusters on the remote system and its application with ports ranging 4040 :4049,  or manually providing a choice of port.
+&nbsp;&nbsp;The jupyterlab widget server extension provides a slot to insert master node DNS, that starts fetching for an active spark clusters of a remote system with its application for ports within range 4040 : 4049,  or by manually providing a choice of port.
 <br /><br />
 **3. Summarising and presenting Spark Applications’ Context**
 <br />
