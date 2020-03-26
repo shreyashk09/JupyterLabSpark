@@ -20,19 +20,14 @@
 <br />
 ## System Components:
 * **Dynamic Interactive UI:**
-&nbsp;&nbsp;Pardon me for the present UI. The UI so far, dynamically manages to handle IFrame window resolution based upon user access.
-<br />
+&nbsp;&nbsp;Pardon me for the present UI. The UI so far, dynamically manages to handle IFrame window resolution based upon user access.<br />
 * **Server Extension for programmatic APIs :**
-&nbsp;&nbsp;This enables us to render a  python package that sustains all the programmed scripts and web-scraping using  Request Handlers like tornado. Reduces complexity on JS. 
-  <br />
+&nbsp;&nbsp;This enables us to render a  python package that sustains all the programmed scripts and web-scraping using  Request Handlers like tornado. Reduces complexity on JS. <br />
 * **IFrames with Proxy Server by WebScrapping**
-
-&nbsp;&nbsp;In order to render a webapp directly onto the widget and provide the embedded links of the webapp, WebScrapping enables developers to proxy forward them and customise the webapp. 
-<br />
-* **Pyspark for python - spark cluster programmatic Integration**
-<br />
+&nbsp;&nbsp;In order to render a webapp directly onto the widget and provide the embedded links of the webapp, WebScrapping enables developers to proxy forward them and customise the webapp. <br />
+* **Pyspark for python - spark cluster programmatic Integration**<br />
 * **Spark Cluster deployment**
-<br /><br />
+
 
 ## Showcasing Prerequisites :
 **Time Series:**<br />
