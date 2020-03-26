@@ -28,11 +28,12 @@
 * **Pyspark for python - spark cluster programmatic Integration**<br />
 * **Spark Cluster deployment**
 
-<video width="966" height="543" controls>
-  <source src="https://youtu.be/41rFOkmNL-U" type="video/mp4">
-</video>
+
+
 
 ## Showcasing Prerequisites :
+<a href src = "https://youtu.be/41rFOkmNL-U">Please Click here for the illustrative video</a>
+<br />
 **Time Series:**<br />
 &nbsp;00:00 &nbsp;Pyspark to python environment for python spark programmatic APIs<br />
 &nbsp;00:16 &nbsp;Spark cluster setting up<br />
